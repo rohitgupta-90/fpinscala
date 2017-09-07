@@ -2,6 +2,8 @@ val commonSettings = Seq(
   scalaVersion := "2.12.1"
 )
 
+
+
 lazy val root = (project in file("."))
   .aggregate(exercises, answers)
   .settings(commonSettings)
@@ -20,3 +22,5 @@ lazy val answers = (project in file("answers"))
   .settings(
     name := "answers"
   )
+
+
